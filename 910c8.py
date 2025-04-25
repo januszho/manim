@@ -126,13 +126,13 @@ class c8(Scene):
 
         self.play(Write(g3))
 
-        #self.wait(2)
+        self.wait(2)
 
-        self.play(Wiggle(text2,
-                         scale_value=1.5,
-                         n_wiggles=24,
-                         run_time=4),
-                         run_time=4)
+        self.play(Wiggle(text2, 
+                  scale_value=1.3,
+                  rotation_angle=0.04*TAU,
+                  n_wiggles=10,
+                  run_time=5))
         
  
         text8 = MarkupText("A<sub>?</sub> = π • 64",
