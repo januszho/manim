@@ -45,7 +45,10 @@ class PapierStreifen(MovingCameraScene):
 
         self.wait(1)
 
-        self.play(l22.animate.rotate(-90*DEGREES, about_point=[1,3,0]))
+        self.play(
+            Rotate(l22, -90*DEGREES, about_point=[1,3,0])
+        )
+        
 
         self.wait(1)
 
@@ -105,7 +108,9 @@ class PapierStreifen(MovingCameraScene):
 
         self.wait(1)
 
-        self.play(l3.animate.rotate(-90*DEGREES, about_point=[1,-2,0]))
+        self.play(
+            Rotate(l3, -90*DEGREES, about_point=[1,-2,0])
+            )
 
         self.play(FadeOut(t2),FadeOut(t3))
 
